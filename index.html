@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Math-Game</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+</head>
+<style>
+    body{
+        background: #2C3E50;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #4CA1AF, #2C3E50);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #4CA1AF, #2C3E50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    }
+
+    #user_input{
+        font-size: 90px;
+    }
+
+    #start_btn{
+        width: 150px;
+        margin-right:auto;
+        margin-left: auto;
+    }
+
+    #start_btn button{
+        background-color: white;
+    }
+</style>
+
+
+
+
+<body>
+
+<h1 style="font-weight: bolder;text-shadow: yellow 0px 0px 20px " class="display-2 text-md-center text-white">Math-Game</h1>
+<h3 class="text-white text-md-center">Do As many Calculation As possible in 1 minute</h3>
+<div id="start_btn" style="width: 150px">
+    <button id="start" class="btn">Start Game</button>
+
+
+</div>
+<h2 id="score" class="text-white text-md-center" ></h2>
+
+<div class="container">
+    <div class="row mt-5">
+        <div class="col-md-3">
+            <div class="card">
+                <div class="card-body" style="margin-right: auto;margin-left: auto">
+                    <span id="fnumUI" style="font-weight: bolder;font-size: 100px">1</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <div class="card-body" style="margin-right: auto;margin-left: auto">
+                    <span id="opUI" style="font-weight: bolder;font-size: 100px">+</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <div class="card-body" style="margin-right: auto;margin-left: auto">
+                    <span id="snumUI" style="font-weight: bolder;font-size: 100px">1</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <div class="card-body" style="margin-right: auto;margin-left: auto">
+                    <input  class="form-control" id="user_input">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-3" >
+        <div class="col-md-4">
+            <div class="card">
+
+                <div class="card-title text-md-center mt-2 display-2">Timer</div>
+                <div class="card-body" style="margin-right: auto;margin-left: auto">
+                    <span id="time" style="font-weight: bolder;font-size: 80px;margin-left: auto;margin-right: auto">60</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-title text-md-center mt-2" style="font-size:50px">Response</div>
+                <div class="card-body" style="margin-right: auto;margin-left: auto">
+                    <span id="response" style="font-weight: bolder;font-size: 70px">----</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-title text-md-center mt-2" style="font-size: 50px">Score</div>
+                <div class="card-body" style="margin-right: auto;margin-left: auto">
+                    <span id="marks" style="font-weight: bolder;font-size: 100px">0</span>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+
+<script src="app.js"></script>
+</body>
+</html>
